@@ -20,14 +20,10 @@ public class EqualSides {
             if (firstSum == secondSum) {
                 //if both sums are equal, store at evenIndex variable and turn found to TRUE
                 evenIndex = i;
-                found = true;
+                return evenIndex;
             }
         }
-        //if you didn't find a even index, return -1
-        if(!found){
-            return -1;
-        }
-        return evenIndex;
+        return -1;
     }
 
     public static int getSum(int from, int to, int[] arr){
